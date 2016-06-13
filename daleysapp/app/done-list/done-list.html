@@ -1,0 +1,26 @@
+﻿<div ng-controller="DoneListController as doneList">
+    <h1 style="font-size:32px; color:black; font: bold">{{doneList.hey}}</h1>
+
+  
+    
+    <table class="table table-bordered table-striped" ng-if="doneList.itemsMarkedDone.length > 0">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Due</th>
+                <th>Importance</th>
+     
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in doneList.itemsMarkedDone">
+                <td>{{item.title}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.due | date}}</td>
+                <td>{{item.importance}}</td>
+            </tr> 
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,62 @@
+﻿@import 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+@import 'http://fonts.googleapis.com/css?family=Roboto:700,400';
+
+
+body {
+    background-color: #E0F7FA;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: black;
+}
+
+.menu {
+    width: 100%;
+    background-color: #00BCD4;
+}
+
+.menu-item {
+    font-size: 24px;
+    color: white;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+h1 {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 400;
+    color: black;
+    display: inline-block;
+    
+}
+.priority {
+    display: inline-block;
+    font-size: 42px;
+    width:100%;
+    text-align: center;
+    
+}
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+  }
+  .partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+  }
+  .data-box {
+      width: 25%;
+      height: 5px;
+  }
+
+
+
+
+
+

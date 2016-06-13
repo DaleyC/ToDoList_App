@@ -1,0 +1,61 @@
+﻿<div ng-controller="HighController as high">
+
+    <h1 style="font-size:32px; color:black">{{high.hey}}</h1>
+
+    <table class="table table-bordered table-striped" ng-if="high.highToDoList.length > 0">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Due</th>
+                <th>Done</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in high.highToDoList">
+                <td class="data-box">
+                    <input class="form-control" type="text" ng-model="item.title"/>
+                </td>
+                <td class="data-box">
+                    <input class="form-control" type="text" ng-model="item.description"/>
+                </td>
+                <td class="data-box">
+                   
+                        <pre>Selected date is: <em>{{ item.due | date:'fullDate' }}</em></pre>
+
+                        <h4>Date Due</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{high.format}}" ng-model="item.due" is-open="high.popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="high.altInputFormats" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="high.open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </p>
+                            </div>
+
+                           
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Format: <span class="muted-text">(manual alternate <em>{{high.altInputFormats[0]}}</em>)</span></label> <select class="form-control" ng-model="high.format" ng-options="f for f in high.formats"><option></option></select>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <button type="button" class="btn btn-sm btn-info" ng-click="high.today($index)">Today</button>
+                        <button type="button" class="btn btn-sm btn-danger" ng-click="high.clear($index)">Clear</button>
+                        
+                    
+                </td>
+                <td class="data-box">
+                     <input class="form-control" type="checkbox" ng-model="item.isDone"/> 
+                
+                </td>
+            </tr> 
+        </tbody>
+    </table>
+    <button class="btn btn-primary" ng-click="high.AddItem()">Add New Item</button>
+    <button class="btn btn-primary" ng-if="high.highToDoList.length > 0" ng-click="high.MoveItemsToDone()">Remove Items</button>
+       
+</div>
