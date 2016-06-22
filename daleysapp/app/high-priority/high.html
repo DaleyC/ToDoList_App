@@ -1,6 +1,6 @@
 ﻿<div ng-controller="HighController as high">
 
-    <h1 style="font-size:32px; color:black">{{high.hey}}</h1>
+    <h1 class ="headings"style="font-size:32px; color:black">{{high.hey}}</h1>
 
     <table class="table table-bordered table-striped" ng-if="high.highToDoList.length > 0">
         <thead>
@@ -55,7 +55,7 @@
             </tr> 
         </tbody>
     </table>
-    <button class="btn btn-primary" ng-click="high.AddItem()">Add New Item</button>
+    <button class="btn btn-primary" ng-click="high.AddItem()">Add Task</button>
     <button class="btn btn-primary" ng-if="high.highToDoList.length > 0" ng-click="high.MoveItemsToDone()">Remove Items</button>
        
 </div>

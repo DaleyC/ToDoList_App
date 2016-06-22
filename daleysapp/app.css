@@ -3,35 +3,64 @@
 
 
 body {
-    background-color: #E0F7FA;
     font-family: Roboto;
     font-weight: 400;
     font-size: 1.6em;
     line-height: 1.6;
-    color: black;
+    background-color: #FFFAFA;
+          
+    
+}
+#background-image {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-image: url('http://cdn.pcwallart.com/images/beach-sand-wallpaper-4.jpg'); 
+     -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+          background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.4;
+    z-index: -1;*/
+
 }
 
 .menu {
     width: 100%;
     background-color: #00BCD4;
+    text-align: left;
 }
 
 .menu-item {
     font-size: 24px;
     color: white;
     margin: 10px 20px 10px 20px;
-    text-align: center;
     display: inline-block;
+    /*opacity: 0.87;*/
+    font-weight: bold;
 }
 h1 {
     font-size: 36px;
-    width: 100%;
-    text-align: center;
+    width: 90%;
+    text-align: left;
     font-family: Roboto;
-    font-weight: 400;
-    color: black;
-    display: inline-block;
+    font-weight: bold;
+    display: inline-block; 
     
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    z-index: -1;
+}
+.headings {
+    opacity: 0.87;
+}
+th {
+    opacity: 0.87;
 }
 .priority {
     display: inline-block;
@@ -54,9 +83,147 @@ h1 {
       width: 25%;
       height: 5px;
   }
+  h4 {
+      opacity: 0.54;
+  }
+  label {
+      opacity: 0.54;
+  }
+  pre {
+      opacity: 0.54;
+  }
+  select {
+       opacity: 0.87;
+  }
+  
+  
+#menuwrapper {
+    z-index: 397;
+    display: inline-block;
+    width: 150px;
+}
+  /* We remove the margin, padding, and list style of UL and LI components */
+#menuwrapper ul, #menuwrapper ul li{
+    margin:0;
+    padding:0;
+    list-style:none;
+    display: inline-block;
+}
+  /* We apply background color and border bottom white and width to 150px */
+#menuwrapper ul li{
+    background-color:#00838F;
+    border-bottom:solid 1px white;
+    width:150px;
+    cursor:pointer;
+    font-weight: 600;
+    display: inline-block;
+}/* We apply the background hover color when user hover the mouse over of the li component */
+#menuwrapper ul li:hover{
+    background-color:#006064;
+    position:relative;
+}
+/* We apply the link style */
+#menuwrapper ul li a{
+    padding:5px 15px;
+    color:#ffffff;
+    display:inline-block;
+    text-decoration:none;
+}
+/**** SECOND LEVEL MENU ****/
+/* We make the position to absolute for flyout menu and hidden the ul until the user hover the parent li item */
+#menuwrapper ul li ul{
+    position:absolute;
+    display:none;
+}
+/* When user has hovered the li item, we show the ul list by applying display:block, note: 150px is the individual menu width.  */
+    #menuwrapper ul li:hover ul {
+        left: 150px;
+        top: 0px;
+        display: inline-block;
+    }
+/* we apply different background color to 2nd level menu items*/
+#menuwrapper ul li ul li{
+    background-color:#FFC400;
+}
+/* We change the background color for the level 2 submenu when hovering the menu */
+#menuwrapper ul li:hover ul li:hover{
+    background-color:#FF8F00;
+}
+/* We style the color of level 2 links */
+#menuwrapper ul li ul li a{
+    color:#454444;
+    display:inline-block;
+    width:120px;
+}
+/**** THIRD LEVEL MENU ****/
+/* We need to hide the 3rd menu, when hovering the first level menu */
+#menuwrapper ul li:hover ul li ul{
+    position:absolute;
+    display:none;
+}
+/* We show the third level menu only when they hover the second level menu parent */
+#menuwrapper ul li:hover ul li:hover ul{
+    display:block;
+    left:150px;
+    top:0;
+}
+/* We change the background color for the level 3 submenu*/
+#menuwrapper ul li:hover ul li:hover ul li{
+    background:#C6FF00;
+}
+/* We change the background color for the level 3 submenu when hovering the menu */
 
+#menuwrapper ul li:hover ul li:hover ul li:hover{
+    background:#AEEA00;     
+}
+/* We change the level 3 link color */
+#menuwrapper ul li:hover ul li:hover ul li a{
+    color:black;
+    opacity: 0.87;
+}
+/* Clear float */
+.clear{
+    clear:both;
+}
+/*Tables*/
+.table {
+    
+}
+/*High Priority Tasks Page*/
+.btn {
+    opacity: 0.87;
+}
+.btn-primary {
+    background: #0097A7;
+    color: #ffffff;
+    border-color: #0097A7;
+   
+}
+.btn-primary:active, {
+    background: #00838F;
+    box-shadow: none;
+    border-color: #00838F;
+}
+.btn-info, .btn-danger {
 
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #00838F;
+    border-color: #00838F;
+}
+.btn-sm {
 
+    background: #FFC400;
+    border-color: #FFC400;
+    color: black;
+    
+}
+.btn-sm:hover, .btn-sm:active, btn-sm:focus, .btn-info:focus, .btn-danger:focus, .btn-danger:active {
+    background: #FF8F00;
+    border-color: #FF8F00;
+    color: black;
+  
+}
 
 
 

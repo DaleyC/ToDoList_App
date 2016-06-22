@@ -1,5 +1,6 @@
 ﻿<div ng-controller="LowController as low">
-    <h1 style="font-size:32px; color:black">{{low.hey}}</h1>
+   
+    <h1 class ="headings" style="font-size:32px; color:black">{{low.hey}}</h1>
 
     <table class="table table-bordered table-striped" ng-if="low.lowToDoList.length > 0">
         <thead>
@@ -36,7 +37,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Format: <span class="muted-text">(manual alternate <em>{{low.altInputFormats[0]}}</em>)</span></label> <select class="form-control" ng-model="low.format" ng-options="f for f in low.formats"><option></option></select>
+                            <label>Format: <span class="muted-text">(manual alternate <em>{{low.altInputFormats[0]}}</em>)</span></label> 
+                            <select class="form-control" ng-model="low.format" ng-options="f for f in low.formats"><option></option></select>
                         </div>
                     </div>
 
@@ -51,28 +53,9 @@
         </tbody>
     </table>
 
-    <button class="btn btn-default" ng-if="low.lowToDoList.length > 0" ng-click="low.MoveItemsToDone()">Remove Items</button>
-    <button class="btn btn-primary" ng-click="low.AddItem()">Add Item</button>
+    <button class="btn btn-primary" ng-if="low.lowToDoList.length > 0" ng-click="low.MoveItemsToDone()">Remove Items</button>
+    <button class="btn btn-primary" ng-click="low.AddItem()">Add Task</button>
 </div>
 
-<!--
-    Create a table with the table headers for a to do list ex: Title, Description, Due Date...
-    Create an array to store the items.
-    Use an ng-repeat on the table to show all items in the array.
-    Add a button that will add a new row to the table.
-    and you also need to bind the textboxes to be a property on the object
-    which is what ng-model is for
-    
--->
-<!--
-    Store the lowToDoList in lowToDoListService, get the ToDoList when loading the controller.
 
--->
-<!--
-    Add a column called 'Mark As Done' with a checkbox for each row.
-    Use angular.forEach() to iterate through the list
-    Add a button that will remove the selected items from the low priority list and take the items marked as done and store them lowToDoListService.
-    In the DoneListController get the items that are marked as done and display them on the screen using a table.
--->
-<!-- Download bootstrap and style the tables using it-->
 

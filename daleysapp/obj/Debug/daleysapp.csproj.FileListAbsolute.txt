@@ -1,6 +1,6 @@
-c:\users\mike\documents\visual studio 2015\Projects\daleysapp\daleysapp\bin\daleysapp.dll.config
-c:\users\mike\documents\visual studio 2015\Projects\daleysapp\daleysapp\bin\daleysapp.dll
-c:\users\mike\documents\visual studio 2015\Projects\daleysapp\daleysapp\bin\daleysapp.pdb
-c:\users\mike\documents\visual studio 2015\Projects\daleysapp\daleysapp\obj\Debug\daleysapp.csprojResolveAssemblyReference.cache
-c:\users\mike\documents\visual studio 2015\Projects\daleysapp\daleysapp\obj\Debug\daleysapp.dll
-c:\users\mike\documents\visual studio 2015\Projects\daleysapp\daleysapp\obj\Debug\daleysapp.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\bin\daleysapp.dll.config
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\bin\daleysapp.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\bin\daleysapp.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\obj\Debug\daleysapp.csprojResolveAssemblyReference.cache
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\obj\Debug\daleysapp.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\obj\Debug\daleysapp.pdb
