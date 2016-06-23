@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict'
 
-    angular.module('app').controller('ToDoListController', Controller);
+    angular.module('app').controller('ToDoList', Controller);
 
     function Controller($scope) {
         var vm = this;

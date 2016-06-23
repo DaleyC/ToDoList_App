@@ -1,5 +1,5 @@
 ﻿(function () {
-    angular.module('app').factory('ToDoListService', Service);
+    angular.module('app').factory('toDoListService', Service);
 
     function Service() {
         var service = {

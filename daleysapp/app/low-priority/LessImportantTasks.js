@@ -3,7 +3,7 @@
     
     angular.module('app').controller('LessImportantTasks', Controller);
 
-    function Controller($scope, ToDoListService) {
+    function Controller($scope, toDoListService) {
         var vm = this;
 
         vm.hey = "Less Important Tasks";
@@ -12,7 +12,7 @@
         Init();
 
         function Init() {
-            vm.lowToDoList = ToDoListService.lowToDoList;           
+            vm.lowToDoList = toDoListService.lowToDoList;           
         }
 
         function AddItem() {
@@ -29,7 +29,7 @@
             for (var i = vm.lowToDoList.length - 1; i >= 0; i--) {
                 if (vm.lowToDoList[i].isDone) {
                 
-                    ToDoListService.itemsMarkedDone.push(vm.lowToDoList[i]);
+                    toDoListService.itemsMarkedDone.push(vm.lowToDoList[i]);
                     vm.lowToDoList.splice(i, 1);
                 }
             }

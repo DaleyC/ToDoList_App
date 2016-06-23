@@ -14,13 +14,13 @@
           url: "/",
           templateUrl: "app/base/base.html"
       })
-       .state('base.todo-list', {
-           url: "todo-list",
-           templateUrl: "app/todo-list/todo-list.html"
+       .state('base.toDoList', {
+           url: "toDoList",
+           templateUrl: "app/toDoList/toDoList.html"
        })
-        .state('base.done-list', {
-            url: "done-list",
-            templateUrl: "app/done-list/done-list.html"
+        .state('base.doneList', {
+            url: "doneList",
+            templateUrl: "app/doneList/doneList.html"
         })
         .state('base.high', {
             url: "high",

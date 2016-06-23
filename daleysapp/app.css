@@ -79,7 +79,7 @@ th {
     display: inline-block;
     width: 150px;
 }
-  /* We remove the margin, padding, and list style of UL and LI components */
+  /* We remove the margin, padding, and  style of UL and LI components */
 #menuwrapper ul, #menuwrapper ul li{
     margin:0;
     padding:0;
