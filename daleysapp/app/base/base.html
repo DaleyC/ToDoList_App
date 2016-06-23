@@ -1,15 +1,9 @@
-﻿<div ng-controller="BaseController as base">
+﻿<div ng-controller="Base as base">
    <div id="background-image"><a href="http://cdn.pcwallart.com/images/beach-sand-wallpaper-4.jpg"></a></div>
     <div class="background">
-        <div class="menu">
-           
-            <p class="menu-item">To-Do List App</p></li>
-            
+        <div class="menu">         
+            <p class="menu-item">To-Do List App</p>         
         </div>
-
-
-
-
     </div>
     <div>
         <div id="menuwrapper">
@@ -19,10 +13,10 @@
                     <a>To-Do List</a>
                     <ul>
                         <li>
-                            <a ui-sref="base.high">High Priority</a>
+                            <a ui-sref="base.high">Important Tasks</a>
 
                         </li>
-                        <li><a ui-sref="base.low">Low Priority</a></li>
+                        <li><a ui-sref="base.low">Less Important Tasks</a></li>
                     </ul>
                 </li>
                 <li>
@@ -31,13 +25,9 @@
                         <li><a ui-sref="base.done-list">See Completed Tasks</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Help</a>
             </ul>
         </div>
         <ui-view />
     </div>
-
-   
-  
 </div>
 

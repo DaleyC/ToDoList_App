@@ -23,17 +23,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
-    <Content Include="app\admin\admin.html" />
-    <Content Include="app\admin\Admin.js" />
     <Content Include="app\base\base.html" />
-    <Content Include="app\base\BaseController.js" />
+    <Content Include="app\base\Base.js" />
     <Content Include="app\done-list\done-list.html" />
     <Content Include="app\done-list\DoneListController.js" />
-    <Content Include="app\done-list\DoneListService.js" />
     <Content Include="app\high-priority\high.html" />
-    <Content Include="app\high-priority\HighController.js" />
+    <Content Include="app\high-priority\ImportantTasks.js" />
     <Content Include="app\low-priority\low.html" />
-    <Content Include="app\low-priority\LowController.js" />
+    <Content Include="app\low-priority\LessImportantTasks.js" />
     <Content Include="app\todo-list\todo-list.html" />
     <Content Include="app\todo-list\ToDoListController.js" />
     <Content Include="app\todo-list\ToDoListService.js" />

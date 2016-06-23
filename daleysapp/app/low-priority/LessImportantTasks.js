@@ -1,28 +1,18 @@
 ﻿(function () {
     'use strict'
     
-    angular.module('app').controller('LowController', Controller);
+    angular.module('app').controller('LessImportantTasks', Controller);
 
     function Controller($scope, ToDoListService) {
         var vm = this;
 
-        vm.hey = "Non Urgent Tasks";
+        vm.hey = "Less Important Tasks";
         vm.AddItem = AddItem;
         vm.MoveItemsToDone = MoveItemsToDone;
         Init();
 
         function Init() {
-            vm.lowToDoList = ToDoListService.lowToDoList;
-            GetForm();
-            GetDropDowns();
-        }
-
-
-        function GetForm() {
-            //getPatientData;
-        }
-        function GetDropDowns() {
-
+            vm.lowToDoList = ToDoListService.lowToDoList;           
         }
 
         function AddItem() {

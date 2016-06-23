@@ -1,4 +1,4 @@
-﻿<div ng-controller="LowController as low">
+﻿<div ng-controller="LessImportantTasks as low">
    
     <h1 class ="headings" style="font-size:32px; color:black">{{low.hey}}</h1>
 
@@ -53,7 +53,7 @@
         </tbody>
     </table>
 
-    <button class="btn btn-primary" ng-if="low.lowToDoList.length > 0" ng-click="low.MoveItemsToDone()">Remove Items</button>
+    <button class="btn btn-primary remove"  ng-if="low.lowToDoList.length > 0" ng-click="low.MoveItemsToDone()">Remove Items</button>
     <button class="btn btn-primary" ng-click="low.AddItem()">Add Task</button>
 </div>
 
