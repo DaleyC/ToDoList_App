@@ -1,53 +1,50 @@
 ﻿(function () {
     'use strict'
-
-    angular.module('app').controller('ImportantTasks', Controller);
+    
+    angular.module('app').controller('LessImportantTasks', Controller);
 
     function Controller($scope, toDoListService) {
         var vm = this;
-        
-        vm.hey = "Important Tasks";
+
+        vm.hey = "Less Important Tasks";
         vm.AddItem = AddItem;
         vm.MoveItemsToDone = MoveItemsToDone;
-        
         Init();
-        
-        
+
         function Init() {
-            vm.highToDoList = toDoListService.highToDoList;
+            vm.lowToDoList = toDoListService.lowToDoList;           
         }
 
         function AddItem() {
-            console.log('add');
             var item = {
             };
             item.title = 'Title here';
-            item.importance = 'High';
-            vm.highToDoList.push(item);
-            console.log(vm.highToDoList);
+            vm.lowToDoList.push(item);
+            item.importance = 'Low';
         }
 
         function MoveItemsToDone() {
-            console.log('done');
-
-            for (var i = vm.highToDoList.length - 1; i >= 0; i--) {
-                console.log('remove')
-                if (vm.highToDoList[i].isDone) {
-                    toDoListService.itemsMarkedDone.push(vm.highToDoList[i]);
-                    vm.highToDoList.splice(i, 1);
+            console.log('anything');
+            
+            for (var i = vm.lowToDoList.length - 1; i >= 0; i--) {
+                if (vm.lowToDoList[i].isDone) {
+                
+                    toDoListService.itemsMarkedDone.push(vm.lowToDoList[i]);
+                    vm.lowToDoList.splice(i, 1);
                 }
             }
         }
+
         vm.today = function ($index) {
             console.log('today function');
-            vm.highToDoList[$index].due = new Date()
+            vm.lowToDoList[$index].due = new Date()
         }
-           
-       
-        
-       
+
+
+
+
         vm.clear = function ($index) {
-            vm.highToDoList[$index].due = null;
+            vm.lowToDoList[$index].due = null;
         };
 
         vm.inlineOptions = {
@@ -57,15 +54,15 @@
         };
 
         vm.dateOptions = {
-           
+
             formatYear: 'yy',
             maxDate: new Date(2020, 5, 22),
             minDate: new Date(),
             startingDay: 1
         };
 
-       
-        
+
+
 
         vm.toggleMin = function () {
             vm.inlineOptions.minDate = vm.inlineOptions.minDate ? null : new Date();
@@ -86,7 +83,7 @@
             vm.due = new Date(year, month, day);
         };
 
-        vm.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+        vm.formats = ['shortDate'];
         vm.format = vm.formats[0];
         vm.altInputFormats = ['M!/d!/yyyy'];
 
@@ -132,5 +129,5 @@
         }
 
     }
-
 })();
+

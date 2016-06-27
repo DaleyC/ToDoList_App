@@ -22,13 +22,13 @@
             url: "doneList",
             templateUrl: "app/doneList/doneList.html"
         })
-        .state('base.high', {
-            url: "high",
-            templateUrl: "app/high-priority/high.html"
+        .state('base.importantTasks', {
+            url: "importantTasks",
+            templateUrl: "app/importantTasks/importantTasks.html"
         })
-        .state('base.low', {
-            url: "low",
-            templateUrl: "app/low-priority/low.html"
+        .state('base.lessImportantTasks', {
+            url: "lessImportantTasks",
+            templateUrl: "app/lessImportantTasks/lessImportantTasks.html"
         })
         ///.state('base.admin', {
           ///  url: "admin",

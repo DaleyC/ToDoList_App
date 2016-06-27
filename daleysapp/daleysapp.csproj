@@ -27,10 +27,10 @@
     <Content Include="app\base\Base.js" />
     <Content Include="app\doneList\doneList.html" />
     <Content Include="app\doneList\DoneList.js" />
-    <Content Include="app\high-priority\high.html" />
-    <Content Include="app\high-priority\ImportantTasks.js" />
-    <Content Include="app\low-priority\low.html" />
-    <Content Include="app\low-priority\LessImportantTasks.js" />
+    <Content Include="app\importantTasks\importantTasks.html" />
+    <Content Include="app\importantTasks\ImportantTasks.js" />
+    <Content Include="app\lessImportantTasks\lessImportantTasks.html" />
+    <Content Include="app\lessImportantTasks\LessImportantTasks.js" />
     <Content Include="app\toDoList\toDoList.html" />
     <Content Include="app\toDoList\ToDoList.js" />
     <Content Include="app\toDoList\toDoListService.js" />

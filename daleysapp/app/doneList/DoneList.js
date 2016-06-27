@@ -1,11 +1,11 @@
 ﻿(function () {
     'use strict'
 
-    angular.module('app').controller('DoneListController', Controller);
+    angular.module('app').controller('DoneList', Controller);
 
     function Controller($scope, toDoListService) {
         var vm = this;
-        vm.hey = 'Done!';
+       
 
         Init();
 
