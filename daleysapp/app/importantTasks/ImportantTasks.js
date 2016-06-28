@@ -5,8 +5,6 @@
 
     function Controller($scope, toDoListService) {
         var vm = this;
-        
-        vm.hey = "Important Tasks";
         vm.AddItem = AddItem;
         vm.MoveItemsToDone = MoveItemsToDone;
         
