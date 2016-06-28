@@ -1,33 +1,28 @@
 ﻿<div ng-controller="Base as base">
-   <div id="background-image"><a href="http://cdn.pcwallart.com/images/beach-sand-wallpaper-4.jpg"></a></div>
     <div class="background">
-        <div class="menu">         
-            <p class="menu-item">To-Do App</p>         
+        <div class="header">         
+            <p class="title">To-Do App</p>         
         </div>
     </div>
     <div>
-        <div id="menuwrapper">
+        <div id="menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li>
-                    <a>To-Do </a>
+                    <a>To-Do</a>
                     <ul>
                         <li>
                             <a ui-sref="base.importantTasks">Important Tasks</a>
-
                         </li>
                         <li><a ui-sref="base.lessImportantTasks">Less Important Tasks</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a>Done </a>
-                    <ul>
-                        <li><a ui-sref="base.doneList">See Completed Tasks</a></li>
-                    </ul>
+                    <a ui-sref="base.doneList">Done</a>
                 </li>
             </ul>
         </div>
-        <ui-view />
+        <ui-view/>
     </div>
 </div>
 
