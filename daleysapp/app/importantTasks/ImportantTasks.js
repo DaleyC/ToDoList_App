@@ -31,7 +31,7 @@
             for (var i = vm.highToDoList.length - 1; i >= 0; i--) {
                 console.log('remove')
                 if (vm.highToDoList[i].isDone) {
-                    toDoListService.itemsMarkedDone.push(vm.highToDoList[i]);
+                    toDoListService.tasksMarkedDone.push(vm.highToDoList[i]);
                     vm.highToDoList.splice(i, 1);
                 }
             }

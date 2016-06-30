@@ -10,7 +10,7 @@
         Init();
 
         function Init() {
-            vm.itemsMarkedDone = toDoListService.itemsMarkedDone;
+            vm.tasksMarkedDone = toDoListService.tasksMarkedDone;
             
         }
         

@@ -7,7 +7,7 @@
             highToDoList: [],
             lowItemsMarkedDone: [],
             highItemsMarkedDone: [],
-            itemsMarkedDone: []
+            tasksMarkedDone: []
         };
         return service;
     }

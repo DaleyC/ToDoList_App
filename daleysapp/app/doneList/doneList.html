@@ -3,7 +3,7 @@
 
   
     
-    <table class="table table-bordered table-striped" ng-if="doneList.itemsMarkedDone.length > 0">
+    <table class="table table-bordered table-striped" ng-if="doneList.tasksMarkedDone.length > 0">
         <thead>
             <tr>
                 <th>Title</th>
@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="item in doneList.itemsMarkedDone">
+            <tr ng-repeat="item in doneList.tasksMarkedDone">
                 <td>{{item.title}}</td>
                 <td>{{item.description}}</td>
                 <td>{{item.due | date}}</td>

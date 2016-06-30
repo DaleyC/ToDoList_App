@@ -27,7 +27,7 @@
             for (var i = vm.lowToDoList.length - 1; i >= 0; i--) {
                 if (vm.lowToDoList[i].isDone) {
                 
-                    toDoListService.itemsMarkedDone.push(vm.lowToDoList[i]);
+                    toDoListService.tasksMarkedDone.push(vm.lowToDoList[i]);
                     vm.lowToDoList.splice(i, 1);
                 }
             }
