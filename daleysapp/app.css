@@ -99,6 +99,7 @@ select {
         #menu ul li {
             background-color: #00BCD4;
             border-bottom: solid 1px white;
+            border-right: solid 1px white;
             width: 150px;
             cursor: pointer;
             font-weight: 600;
@@ -106,7 +107,7 @@ select {
         }
             /* We apply the background hover color when user hover the mouse over of the li component */
             #menu ul li:hover {
-                background-color: #006064;
+                background-color: #0097A7;
                 position: relative;
             }
             /* We apply the link style */
@@ -131,15 +132,16 @@ select {
             }
             /* we apply different background color to 2nd level menu items*/
             #menu ul li ul li {
-                background-color: #FFC400;
+                background-color: #0097A7;
+                color: white;
             }
             /* We change the background color for the level 2 submenu when hovering the menu */
             #menu ul li:hover ul li:hover {
-                background-color: #FF8F00;
+                background-color: #006064;
             }
             /* We style the color of level 2 links */
             #menu ul li ul li a {
-                color: #454444;
+                color: white;
                 display: inline-block;
                 width: 120px;
             }
@@ -192,18 +194,15 @@ select {
         
     }
 
-    .btn-primary:active, {
-        background: #00838F;
+    .btn-primary:active, .btn-primary:hover {
+        background: #0097A7;
         box-shadow: none;
-        border-color: #00838F;
+        border-color: #0097A7;
     }
 
-.btn-info, .btn-danger {
-}
-
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #00838F;
-    border-color: #00838F;
+    background: #0097A7;
+    border-color: #0097A7;
     display: inline-block;
 }
 

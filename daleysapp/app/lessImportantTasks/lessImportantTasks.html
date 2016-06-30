@@ -1,4 +1,4 @@
-﻿<div ng-controller="LessImportantTasks as low" class="container-fluid">
+﻿<div class="task-tables-display" ng-controller="LessImportantTasks as low" class="container-fluid">
    
     <h1 class ="headings" style="font-size:32px; color:black">Less Important Tasks</h1>
 
@@ -29,10 +29,7 @@
                                 </span>
                             </p>
                         </div>
-
-
                     </div>
-
                     <hr />
                     <button type="button" class="btn btn-sm btn-info" ng-click="low.today($index)">Today</button>
                     <button type="button" class="btn btn-sm btn-danger" ng-click="low.clear($index)">Clear</button>
@@ -43,9 +40,8 @@
             </tr>
         </tbody>
     </table>
-
-    <button class="btn btn-primary remove"  ng-if="low.lowToDoList.length > 0" ng-click="low.MoveItemsToDone()">Remove Items</button>
     <button class="btn btn-primary" ng-click="low.AddItem()">Add Task</button>
+    <button class="btn btn-primary"  ng-if="low.lowToDoList.length > 0" ng-click="low.MoveItemsToDone()">Remove Items</button>
 </div>
 
 
