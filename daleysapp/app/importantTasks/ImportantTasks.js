@@ -62,9 +62,6 @@
             startingDay: 1
         };
 
-       
-        
-
         vm.toggleMin = function () {
             vm.inlineOptions.minDate = vm.inlineOptions.minDate ? null : new Date();
             vm.dateOptions.minDate = vm.inlineOptions.minDate;
@@ -76,10 +73,6 @@
             vm.popup1.opened = true;
         };
 
-        vm.open2 = function () {
-            vm.popup2.opened = true;
-        };
-
         vm.setDate = function (year, month, day) {
             vm.due = new Date(year, month, day);
         };
@@ -89,10 +82,6 @@
         vm.altInputFormats = ['M!/d!/yyyy'];
 
         vm.popup1 = {
-            opened: false
-        };
-
-        vm.popup2 = {
             opened: false
         };
 
