@@ -3,14 +3,14 @@
 
     angular.module('app').controller('DoneList', Controller);
 
-    function Controller($scope, toDoListService) {
+    function Controller($scope, appService) {
         var vm = this;
        
 
         Init();
 
         function Init() {
-            vm.tasksMarkedDone = toDoListService.tasksMarkedDone;
+            vm.tasksMarkedDone = appService.tasksMarkedDone;
             
         }
         

@@ -15,26 +15,21 @@
           templateUrl: "app/base/base.html"
       })
        .state('base.toDoList', {
-           url: "toDoList",
+           url: "to-do-list",
            templateUrl: "app/toDoList/toDoList.html"
        })
         .state('base.doneList', {
-            url: "doneList",
+            url: "done-list",
             templateUrl: "app/doneList/doneList.html"
         })
         .state('base.importantTasks', {
-            url: "importantTasks",
+            url: "important-tasks",
             templateUrl: "app/importantTasks/importantTasks.html"
         })
         .state('base.lessImportantTasks', {
-            url: "lessImportantTasks",
+            url: "less-important-tasks",
             templateUrl: "app/lessImportantTasks/lessImportantTasks.html"
         })
-        ///.state('base.admin', {
-          ///  url: "admin",
-         ///   templateUrl: "app/admin/admin.html"
-      ///  })
-
     }
 
 })();

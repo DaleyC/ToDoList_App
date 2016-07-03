@@ -33,9 +33,7 @@
     <Content Include="app\importantTasks\ImportantTasks.js" />
     <Content Include="app\lessImportantTasks\lessImportantTasks.html" />
     <Content Include="app\lessImportantTasks\LessImportantTasks.js" />
-    <Content Include="app\toDoList\toDoList.html" />
-    <Content Include="app\toDoList\ToDoList.js" />
-    <Content Include="app\toDoList\toDoListService.js" />
+    <Content Include="app\core\services\appService.js" />
     <Content Include="index.html" />
     <Content Include="scripts\angular-animate.min.js" />
     <Content Include="scripts\angular-ui-bootstrap.js" />
