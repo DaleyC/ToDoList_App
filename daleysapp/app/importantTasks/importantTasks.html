@@ -1,6 +1,5 @@
 ﻿<div class="task-tables-display" ng-controller="ImportantTasks as high">
-    <h1 class ="headings"style="font-size:32px; color:black">Important Tasks</h1>
-
+    <h1 class="headings" style="font-size:32px; color:black">Important Tasks</h1>
     <table class="table table-bordered table-striped" ng-if="high.highToDoList.length > 0">
         <thead>
             <tr>
@@ -13,39 +12,24 @@
         <tbody>
             <tr ng-repeat="item in high.highToDoList">
                 <td class="data-box">
-                    <input class="form-control" type="text" ng-model="item.title"/>
+                    <input class="form-control" type="text" ng-model="item.title" />
                 </td>
                 <td class="data-box">
-                    <input class="form-control" type="text" ng-model="item.description"/>
+                    <input class="form-control" type="text" ng-model="item.description" />
                 </td>
                 <td class="data-box">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p class="input-group">
-                                    <input type="text" class="form-control" uib-datepicker-popup="{{high.format}}" ng-model="item.due" is-open="high.popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="high.altInputFormats" />
-                                    <span class="input-group-btn">
-                                        <button type="button" class="btn btn-default" ng-click="high.open1()"><i class="glyphicon glyphicon-calendar"></i></button>
-                                    </span>
-                                </p>
-                            </div>
-
-                           
+                    <div class="row">
+                        <div class="col-md-6">
+                            <da-datepicker selected-date="item.due"></da-datepicker>
                         </div>
-
-                        <hr />
-                        <button type="button" class="btn btn-sm btn-info" ng-click="high.today($index)">Today</button>
-                        <button type="button" class="btn btn-sm btn-danger" ng-click="high.clear($index)">Clear</button>
-                        
-                    
+                    </div>
                 </td>
                 <td class="data-box">
-                     <input class="form-control" type="checkbox" ng-model="item.isDone"/> 
-                
+                    <input class="form-control" type="checkbox" ng-model="item.isDone" />
                 </td>
-            </tr> 
+            </tr>
         </tbody>
     </table>
     <button class="btn btn-primary" ng-click="high.AddItem()">Add Task</button>
     <button class="btn btn-primary" ng-if="high.highToDoList.length > 0" ng-click="high.MoveItemsToDone()">Remove Items</button>
-       
 </div>

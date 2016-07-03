@@ -4,3 +4,9 @@ C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\bin\dale
 C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\obj\Debug\daleysapp.csprojResolveAssemblyReference.cache
 C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\obj\Debug\daleysapp.dll
 C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\daleysapp\obj\Debug\daleysapp.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\ToDoList_App\daleysapp\bin\daleysapp.dll.config
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\ToDoList_App\daleysapp\bin\daleysapp.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\ToDoList_App\daleysapp\bin\daleysapp.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\ToDoList_App\daleysapp\obj\Debug\daleysapp.csprojResolveAssemblyReference.cache
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\ToDoList_App\daleysapp\obj\Debug\daleysapp.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\daleysapp\ToDoList_App\daleysapp\obj\Debug\daleysapp.pdb

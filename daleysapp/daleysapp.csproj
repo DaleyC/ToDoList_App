@@ -25,6 +25,8 @@
     <Content Include="app.css" />
     <Content Include="app\base\base.html" />
     <Content Include="app\base\Base.js" />
+    <Content Include="app\core\components\daDatepicker.html" />
+    <Content Include="app\core\components\daDatepicker.js" />
     <Content Include="app\doneList\doneList.html" />
     <Content Include="app\doneList\DoneList.js" />
     <Content Include="app\importantTasks\importantTasks.html" />

@@ -210,6 +210,7 @@ select {
     background: #FFC400;
     border-color: #FFC400;
     color: black;
+    margin-top: 5px;
 }
 
     .btn-sm:hover, .btn-sm:active, btn-sm:focus, .btn-info:focus, .btn-danger:focus, .btn-danger:active {
