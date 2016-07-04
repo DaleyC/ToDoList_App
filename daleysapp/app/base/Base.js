@@ -1,10 +1,9 @@
 ﻿(function () {
     'use strict'
+    angular.module('app').controller('Base', controller);
 
-    angular.module('app').controller('Base', Controller);
-
-    function Controller($scope) {
+    function controller($scope) {
         var vm = this;
-    }
 
+    }
 })();

@@ -1,7 +1,5 @@
-﻿<div class="task-tables-display" ng-controller="LessImportantTasks as low" class="container-fluid">
-   
+﻿<div class="task-tables-display" ng-controller="LessImportantTasks as low">
     <h1 class ="headings" style="font-size:32px; color:black">Less Important Tasks</h1>
-
     <table class="table table-bordered table-striped" ng-if="low.lowToDoList.length > 0">
         <thead>
             <tr>
@@ -32,8 +30,8 @@
             </tr>
         </tbody>
     </table>
-    <button class="btn btn-primary" ng-click="low.AddItem()">Add Task</button>
-    <button class="btn btn-primary"  ng-if="low.lowToDoList.length > 0" ng-click="low.MoveItemsToDone()">Remove Items</button>
+    <button class="btn btn-primary" ng-click="low.addTask()">Add Task</button>
+    <button class="btn btn-primary"  ng-if="low.lowToDoList.length > 0" ng-click="low.moveItemsToDone()">Move Task to Done</button>
 </div>
 
 

@@ -12,10 +12,10 @@
         <tbody>
             <tr ng-repeat="item in high.highToDoList">
                 <td class="data-box">
-                    <input class="form-control" type="text" ng-model="item.title" />
+                    <input class="form-control" type="text" ng-model="item.title"/>
                 </td>
                 <td class="data-box">
-                    <input class="form-control" type="text" ng-model="item.description" />
+                    <input class="form-control" type="text" ng-model="item.description"/>
                 </td>
                 <td class="data-box">
                     <div class="row">
@@ -25,11 +25,11 @@
                     </div>
                 </td>
                 <td class="data-box">
-                    <input class="form-control" type="checkbox" ng-model="item.isDone" />
+                    <input class="form-control" type="checkbox" ng-model="item.isDone"/>
                 </td>
             </tr>
         </tbody>
     </table>
-    <button class="btn btn-primary" ng-click="high.AddItem()">Add Task</button>
-    <button class="btn btn-primary" ng-if="high.highToDoList.length > 0" ng-click="high.MoveItemsToDone()">Remove Items</button>
+    <button class="btn btn-primary" ng-click="high.addTask()">Add Task</button>
+    <button class="btn btn-primary" ng-if="high.highToDoList.length > 0" ng-click="high.moveItemsToDone()">Move Task to Done</button>
 </div>

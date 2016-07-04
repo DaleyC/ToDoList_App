@@ -2,14 +2,14 @@
     'use strict';
     angular.module('app').component('daDatepicker', {
         templateUrl: 'app/core/components/daDatepicker.html',
-        controller: Controller,
+        controller: controller,
         bindings: {
             selectedDate: '='
         },
         restrict: 'E'
     });
 
-    function Controller($scope) {
+    function controller($scope) {
         var vm = this;
 
         vm.clear = clear;
@@ -27,11 +27,11 @@
 
         init();
 
-        function init() {
-        }
-
         function clear() {
             vm.selectedDate = undefined;
+        }
+
+        function init() {
         }
 
         function open() {

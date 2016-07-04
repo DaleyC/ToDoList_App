@@ -1,22 +1,16 @@
 ﻿(function () {
     'use strict'
 
-    angular.module('app').controller('DoneList', Controller);
+    angular.module('app').controller('DoneList', controller);
 
-    function Controller($scope, appService) {
+    function controller($scope, appService) {
         var vm = this;
-       
 
-        Init();
+        init();
 
-        function Init() {
+        function init() {
             vm.tasksMarkedDone = appService.tasksMarkedDone;
-            
         }
-        
-
-
 
     }
-
 })();

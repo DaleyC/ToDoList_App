@@ -1,35 +1,30 @@
 ﻿(function () {
     'use strict'
 
-    angular.module('app').controller('ImportantTasks', Controller);
+    angular.module('app').controller('ImportantTasks', controller);
 
-    function Controller($scope, appService) {
+    function controller($scope, appService) {
         var vm = this;
-        vm.AddItem = AddItem;
-        vm.MoveItemsToDone = MoveItemsToDone;
-        
-        Init();
-        
-        
-        function Init() {
+
+        vm.addTask = addTask;
+        vm.moveItemsToDone = moveItemsToDone;
+
+        init();
+
+         function init() {
             vm.highToDoList = appService.highToDoList;
         }
 
-        function AddItem() {
-            console.log('add');
-            var item = {
-            };
+        function addTask() {
+            var item = {};
             item.title = 'Title here';
             item.importance = 'High';
+
             vm.highToDoList.push(item);
-            console.log(vm.highToDoList);
         }
-
-        function MoveItemsToDone() {
-            console.log('done');
-
+      
+        function moveItemsToDone() {
             for (var i = vm.highToDoList.length - 1; i >= 0; i--) {
-                console.log('remove')
                 if (vm.highToDoList[i].isDone) {
                     appService.tasksMarkedDone.push(vm.highToDoList[i]);
                     vm.highToDoList.splice(i, 1);
@@ -38,5 +33,4 @@
         }
 
     }
-
 })();

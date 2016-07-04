@@ -1,15 +1,15 @@
 ﻿(function () {
-    angular.module('app').factory('appService', Service);
+    angular.module('app').factory('appService', service);
 
-    function Service() {
+    function service() {
         var service = {
-            lowToDoList: [],
+            highItemsMarkedDone: [],
             highToDoList: [],
             lowItemsMarkedDone: [],
-            highItemsMarkedDone: [],
+            lowToDoList: [],
             tasksMarkedDone: []
         };
+
         return service;
     }
-
 })();
