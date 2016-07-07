@@ -1,5 +1,5 @@
 ﻿<div class="task-tables-display" ng-controller="ImportantTasks as high">
-    <h1 class="headings" style="font-size:32px; color:black">Important Tasks</h1>
+    <h2>Important Tasks</h2>
     <table class="table table-bordered table-striped" ng-if="high.highToDoList.length > 0">
         <thead>
             <tr>
@@ -11,20 +11,20 @@
         </thead>
         <tbody>
             <tr ng-repeat="item in high.highToDoList">
-                <td class="data-box">
-                    <input class="form-control" type="text" ng-model="item.title"/>
+                <td>
+                    <textarea class="form-control" type="text" ng-model="item.title"></textarea>
                 </td>
-                <td class="data-box">
-                    <input class="form-control" type="text" ng-model="item.description"/>
+                <td>
+                    <textarea class="form-control" type="text" ng-model="item.description"></textarea>
                 </td>
-                <td class="data-box">
+                <td>
                     <div class="row">
                         <div class="col-md-6">
                             <da-datepicker selected-date="item.due"></da-datepicker>
                         </div>
                     </div>
                 </td>
-                <td class="data-box">
+                <td>
                     <input class="form-control" type="checkbox" ng-model="item.isDone"/>
                 </td>
             </tr>

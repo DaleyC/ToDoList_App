@@ -8,20 +8,34 @@ body {
     font-size: 1.6em;
     line-height: 1.6;
     background-color: #FFFAFA;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 
-.header {
-    width: 100%;
-    background-color: #00BCD4;
-    text-align: left;
-}
-
-.title {
+h1 {
     font-size: 24px;
     color: white;
     margin: 10px 20px 10px 20px;
     display: inline-block;
     font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: Roboto;
+    text-align: left;
+    font-weight: bold;
+    color:black;
+    opacity: 0.87;
+}
+
+.app-header {
+    width: 100%;
+    background-color: #00BCD4;
+    text-align: left;
 }
 
 .dis-inline-block {
@@ -30,73 +44,25 @@ body {
     margin-left:9.5%;
 }
 
-.headings {
-    opacity: 0.87;
-}
-
-th {
-    opacity: 0.87;
-}
-
-.priority {
-    display: inline-block;
-    font-size: 42px;
-    width: 100%;
-    text-align: center;
-}
-
-.full button span {
-    background-color: limegreen;
-    border-radius: 32px;
-    color: black;
-}
-
-.partially button span {
-    background-color: orange;
-    border-radius: 32px;
-    color: black;
-}
-
-.data-box {
-    width: 25%;
-    height: 5px;
-}
-
-h4 {
-    opacity: 0.54;
-}
-
-label {
-    opacity: 0.54;
-}
-
-pre {
-    opacity: 0.54;
-}
-
-select {
-    opacity: 0.87;
-}
-
-
-#menu {
+/* MENU FIRST LEVEL */
+.menu {
     border-top:solid 1px white;
-    z-index: 397;
+    z-index: 1;
     display: inline-block;
     width: 150px;
-    position: fixed;
     margin-top: 0;
     margin-left: 0;
+    position: absolute;
 }
-    /* We remove the margin, padding, and  style of UL and LI components */
-    #menu ul, #menu ul li {
+    
+    .menu ul, .menu ul li {
         margin: 0;
         padding: 0;
         list-style: none;
         display: inline-block;
     }
-        /* We apply background color and border bottom white and width to 150px */
-        #menu ul li {
+        
+        .menu ul li {
             background-color: #00BCD4;
             border-bottom: solid 1px white;
             border-right: solid 1px white;
@@ -105,132 +71,57 @@ select {
             font-weight: 600;
             display: inline-block;
         }
-            /* We apply the background hover color when user hover the mouse over of the li component */
-            #menu ul li:hover {
+          
+            .menu ul li:hover {
                 background-color: #0097A7;
                 position: relative;
             }
-            /* We apply the link style */
-            #menu ul li a {
+           
+            .menu ul li a {
                 padding: 5px 15px;
                 color: #ffffff;
                 display: inline-block;
                 text-decoration: none;
             }
-            /**** SECOND LEVEL MENU ****/
-            /* We make the position to absolute for flyout menu and hidden the ul until the user hover the parent li item */
-            #menu ul li ul {
-                z-index: 397;
+            /* MENU SECOND LEVEL */
+            
+            .menu ul li ul {
+                z-index: 1;
                 position: absolute;
                 display: none;
             }
-            /* When user has hovered the li item, we show the ul list by applying display:block, note: 150px is the individual menu width.  */
-            #menu ul li:hover ul {
+            
+            .menu ul li:hover ul {
                 left: 150px;
                 top: 0px;
                 display: inline-block;
             }
-            /* we apply different background color to 2nd level menu items*/
-            #menu ul li ul li {
+            
+            .menu ul li ul li {
                 background-color: #0097A7;
                 color: white;
             }
-            /* We change the background color for the level 2 submenu when hovering the menu */
-            #menu ul li:hover ul li:hover {
+            
+            .menu ul li:hover ul li:hover {
                 background-color: #006064;
             }
-            /* We style the color of level 2 links */
-            #menu ul li ul li a {
+           
+            .menu a {
                 color: white;
                 display: inline-block;
                 width: 120px;
             }
-            /**** THIRD LEVEL MENU ****/
-            /* We need to hide the 3rd menu, when hovering the first level menu */
-            #menu ul li:hover ul li ul {
-                position: absolute;
-                display: none;
-            }
-            /* We show the third level menu only when they hover the second level menu parent */
-            #menu ul li:hover ul li:hover ul {
-                display: block;
-                left: 150px;
-                top: 0;
-            }
-                /* We change the background color for the level 3 submenu*/
-                #menu ul li:hover ul li:hover ul li {
-                    background: #C6FF00;
-                }
-                    /* We change the background color for the level 3 submenu when hovering the menu */
 
-                    #menu ul li:hover ul li:hover ul li:hover {
-                        background: #AEEA00;
-                    }
-                    /* We change the level 3 link color */
-                    #menu ul li:hover ul li:hover ul li a {
-                        color: black;
-                        opacity: 0.87;
-                    }
-/* Clear float */
-.clear {
-    clear: both;
-}
 /*Tables*/
-.table {
-}
-/*High Priority Tasks Page*/
-.btn {
+
+th {
     opacity: 0.87;
 }
 
-.btn-primary {
-    background: #00BCD4;
-    color: #ffffff;
-    border-color: #00BCD4;
-   
-}
-
-    .btn-primary remove {
-        
-    }
-
-    .btn-primary:active, .btn-primary:hover {
-        background: #0097A7;
-        box-shadow: none;
-        border-color: #0097A7;
-    }
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #0097A7;
-    border-color: #0097A7;
-    display: inline-block;
-}
-
-.btn-sm {
-    background: #FFC400;
-    border-color: #FFC400;
-    color: black;
+div > button{
     margin-top: 5px;
 }
 
-    .btn-sm:hover, .btn-sm:active, btn-sm:focus, .btn-info:focus, .btn-danger:focus, .btn-danger:active {
-        background: #FF8F00;
-        border-color: #FF8F00;
-        color: black;
-    }
-
-.table {
-    
-    z-index: -1;
-}
-
-h1 {
-    font-size: 36px;
-    font-family: Roboto;
-    text-align: left;
-    font-weight: bold;
-    z-index: -1;
-}
 .task-tables-display {
     width:75%;
 }
