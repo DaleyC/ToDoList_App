@@ -1,7 +1,14 @@
 ﻿<div class="task-tables-display" ng-controller="DoneList as doneList">
-    <div class="container da-form">
+    <div class="container da-form" ng-if="doneList.tasksMarkedDone.length < 1">
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-md-12 margin-bottom-15">
+                <h2>You have not finished any tasks yet.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container da-form" ng-if="doneList.tasksMarkedDone.length > 0">
+        <div class="row">
+            <div class="col-md-12">
                 <h2>Done!</h2>
             </div>
         </div>
