@@ -4,6 +4,6 @@
 
     function controller($scope) {
         var vm = this;
-
+        vm.isCollapsed = true;
     }
 })();

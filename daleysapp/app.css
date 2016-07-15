@@ -1,127 +1,39 @@
-﻿@import 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
-@import 'http://fonts.googleapis.com/css?family=Roboto:700,400';
-
-
-body {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 1.6em;
-    line-height: 1.6;
-    background-color: #FFFAFA;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+﻿body {
+    background-color: #f1f1f1;
 }
 
-h1 {
-    font-size: 24px;
-    color: white;
-    margin: 10px 20px 10px 20px;
-    display: inline-block;
-    font-weight: bold;
+.da-form {
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
-h2 {
-    font-size: 32px;
-    font-family: Roboto;
-    text-align: left;
-    font-weight: bold;
-    color:black;
-    opacity: 0.87;
+/*TABLE*/
+.table-striped > thead > tr {
+    background-color: #F9F9F9;
 }
 
-.app-header {
-    width: 100%;
-    background-color: #00BCD4;
-    text-align: left;
+.table-striped > tbody > tr:nth-child(even) {
+    background-color: #F9F9F9;
 }
 
-.dis-inline-block {
-    display: inline-block;
-    position: absolute;
-    margin-left:9.5%;
+.table-striped > tbody > tr:nth-child(odd) {
+    background-color: white;
 }
-
-/* MENU FIRST LEVEL */
-.menu {
-    border-top:solid 1px white;
-    z-index: 1;
-    display: inline-block;
-    width: 150px;
-    margin-top: 0;
-    margin-left: 0;
-    position: absolute;
-}
-    
-    .menu ul, .menu ul li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: inline-block;
-    }
-        
-        .menu ul li {
-            background-color: #00BCD4;
-            border-bottom: solid 1px white;
-            border-right: solid 1px white;
-            width: 150px;
-            cursor: pointer;
-            font-weight: 600;
-            display: inline-block;
-        }
-          
-            .menu ul li:hover {
-                background-color: #0097A7;
-                position: relative;
-            }
-           
-            .menu ul li a {
-                padding: 5px 15px;
-                color: #ffffff;
-                display: inline-block;
-                text-decoration: none;
-            }
-            /* MENU SECOND LEVEL */
-            
-            .menu ul li ul {
-                z-index: 1;
-                position: absolute;
-                display: none;
-            }
-            
-            .menu ul li:hover ul {
-                left: 150px;
-                top: 0px;
-                display: inline-block;
-            }
-            
-            .menu ul li ul li {
-                background-color: #0097A7;
-                color: white;
-            }
-            
-            .menu ul li:hover ul li:hover {
-                background-color: #006064;
-            }
-           
-            .menu a {
-                color: white;
-                display: inline-block;
-                width: 120px;
-            }
-
-/*Tables*/
-
-th {
-    opacity: 0.87;
-}
-
-div > button{
+/*"TODAY" AND "CLEAR BUTTONS"*/
+.margin-top-05 {
     margin-top: 5px;
 }
+/*"ADD TASK" AND "MOVE TASK TO DONE" BUTTONS*/
+.button-remove-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
 
-.task-tables-display {
-    width:75%;
+.position-relative-float-right {
+    position: relative;
+    float: right;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
 }

@@ -3,7 +3,7 @@
     angular.module('app').config(Config);
 
     function Config($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/");
+        $urlRouterProvider.otherwise("done-list");
 
         $stateProvider
         .state('base', {

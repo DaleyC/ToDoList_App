@@ -1,21 +1,31 @@
 ﻿<div class="task-tables-display" ng-controller="DoneList as doneList">
-    <h2>Done!</h2>
-    <table class="table table-bordered table-striped" ng-if="doneList.tasksMarkedDone.length > 0">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Due</th>
-                <th>Importance</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="item in doneList.tasksMarkedDone">
-                <td>{{item.title}}</td>
-                <td>{{item.description}}</td>
-                <td>{{item.due | date}}</td>
-                <td>{{item.importance}}</td>
-            </tr> 
-        </tbody>
-    </table>
+    <div class="container da-form">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Done!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <table class="table table-bordered table-striped" ng-if="doneList.tasksMarkedDone.length > 0">
+                    <thead>
+                        <tr>
+                            <th class="col-xs-3">Title</th>
+                            <th class="col-xs-3">Description</th>
+                            <th class="col-xs-3">Due</th>
+                            <th class="col-xs-3">Importance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in doneList.tasksMarkedDone">
+                            <td>{{item.title}}</td>
+                            <td>{{item.description}}</td>
+                            <td>{{item.due | date}}</td>
+                            <td>{{item.importance}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>

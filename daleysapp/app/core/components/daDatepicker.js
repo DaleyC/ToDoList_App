@@ -25,13 +25,8 @@
         };
         vm.today = today;
 
-        init();
-
         function clear() {
             vm.selectedDate = undefined;
-        }
-
-        function init() {
         }
 
         function open() {

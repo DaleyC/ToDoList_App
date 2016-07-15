@@ -18,6 +18,7 @@
         function addTask() {
             var item = {};
             item.title = 'Title here';
+            item.description = 'Description of task here';
             item.importance = 'Low';
 
             vm.lowToDoList.push(item);

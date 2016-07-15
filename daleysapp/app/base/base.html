@@ -1,30 +1,29 @@
 ﻿<div ng-controller="Base as base">
-    <div class="background">
-        <div class="app-header">         
-            <h1>To-Do App</h1>         
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-click="base.isCollapsed = !base.isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">To-Do App</a>
         </div>
-    </div>
-    <div>
-        <div class="menu">
-            <ul>
+        <div class="collapse navbar-collapse" uib-collapse="base.isCollapsed">
+            <ul class="nav navbar-nav">
                 <li><a href="#">Home</a></li>
-                <li>
-                    <a>To-Do</a>
-                    <ul>
-                        <li>
-                            <a style="border-top: solid 1px white; width: 150px" ui-sref="base.importantTasks">Important Tasks</a>
-                        </li>
+                <li uib-dropdown>
+                    <a href="#" uib-dropdown-toggle>To-Do <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref="base.importantTasks">Important Tasks</a></li>
                         <li><a ui-sref="base.lessImportantTasks">Less Important Tasks</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a ui-sref="base.doneList">Done</a>
-                </li>
+                <li><a href="#">Done</a></li>
             </ul>
         </div>
-        <div class="dis-inline-block">
-            <ui-view />
-        </div>
+    </nav>
+    <div class="dis-inline-block">
+        <ui-view />
     </div>
 </div>
-
