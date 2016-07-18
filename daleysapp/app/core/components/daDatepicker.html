@@ -1,6 +1,6 @@
 ﻿<div>
     <div class="input-group">
-        <input type="text" class="form-control date-picker-input" uib-datepicker-popup="{{$ctrl.format}}" ng-model="$ctrl.selectedDate" is-open="$ctrl.popup.opened" datepicker-options="$ctrl.dateOptions" close-text="Close" />
+        <input type="text" class="form-control date-picker-input" uib-datepicker-popup="{{$ctrl.format}}" ng-model="$ctrl.ngModel" is-open="$ctrl.popup.opened" datepicker-options="$ctrl.dateOptions" close-text="Close" ng-required="$ctrl.isRequired" />
         <span class="input-group-btn">
             <button type="button" class="btn btn-default" ng-click="$ctrl.open()"><i class="glyphicon glyphicon-calendar"></i></button>
         </span>

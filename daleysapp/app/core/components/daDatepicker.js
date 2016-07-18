@@ -4,7 +4,8 @@
         templateUrl: 'app/core/components/daDatepicker.html',
         controller: controller,
         bindings: {
-            selectedDate: '='
+            ngModel: '=',
+            isRequired: '='
         },
         restrict: 'E'
     });
@@ -26,7 +27,7 @@
         vm.today = today;
 
         function clear() {
-            vm.selectedDate = undefined;
+            vm.ngModel = undefined;
         }
 
         function open() {
@@ -34,7 +35,7 @@
         }
 
         function today() {
-            vm.selectedDate = new Date();
+            vm.ngModel = new Date();
         }
 
     }
