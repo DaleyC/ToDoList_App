@@ -1,11 +1,11 @@
-﻿<div class="task-tables-display" ng-controller="ImportantTasks as high">
-    <form novalidate class="da-form container" name="high.form" ng-class="{'form-submitted': high.isSubmitted}">
+﻿<div class="task-tables-display" ng-controller="ImportantTasks as importantTasks">
+    <form novalidate class="da-form container" name="importantTasks.form" ng-class="{'form-submitted': importantTasks.isSubmitted}">
         <div class="row">
             <div class="col-md-12">
                 <h2>Important Tasks</h2>
             </div>
         </div>
-        <table class="table table-bordered table-striped" ng-if="high.highToDoList.length > 0">
+        <table class="table table-bordered table-striped" ng-if="importantTasks.highToDoList.length > 0">
             <thead>
                 <tr>
                     <th class="col-xs-3">Title</th>
@@ -15,7 +15,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="item in high.highToDoList">
+                <tr ng-repeat="item in importantTasks.highToDoList">
                     <td>
                         <input type="text" class="form-control" ng-model="item.title" />
                     </td>
@@ -38,10 +38,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-xs-2 button-remove-padding">
-                    <button class="btn btn-primary margin-bottom-15" ng-click="high.addTask()">Add Task</button>
+                    <button class="btn btn-primary margin-bottom-15" ng-click="importantTasks.addTask()">Add Task</button>
                 </div>
                 <div class="col-md-2 col-md-offset-8 button-remove-padding">
-                    <button class="btn btn-primary position-relative-float-right" ng-if="high.highToDoList.length > 0" ng-click="high.moveItemsToDone()">Move Task to Done</button>
+                    <button class="btn btn-primary position-relative float-right" ng-if="importantTasks.highToDoList.length > 0" ng-click="importantTasks.moveItemsToDone()">Move Task to Done</button>
                 </div>
             </div>
         </div>
