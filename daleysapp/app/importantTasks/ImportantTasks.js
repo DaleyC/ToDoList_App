@@ -8,7 +8,7 @@
 
         vm.addTask = addTask;
         vm.moveItemsToDone = moveItemsToDone;
-        vm.datePicker = document.getElementsByTagName("date-picker-input");
+        vm.isSubmitted = false;
 
         init();
 
@@ -26,13 +26,18 @@
         }
 
         function moveItemsToDone() {
+            vm.isSubmitted = true;
+            if (vm.form.$invalid) {
+                return;
+            }
             for (var i = vm.highToDoList.length - 1; i >= 0; i--) {
                 if (vm.highToDoList[i].isDone) {
                     appService.tasksMarkedDone.push(vm.highToDoList[i]);
                     vm.highToDoList.splice(i, 1);
                 }
             }
-
+            vm.isSubmitted = false;
+            vm.form.$setPristine();
         }
 
     }

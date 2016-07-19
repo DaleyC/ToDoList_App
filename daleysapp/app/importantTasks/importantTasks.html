@@ -1,5 +1,5 @@
 ﻿<div class="task-tables-display" ng-controller="ImportantTasks as high">
-    <div class="container da-form">
+    <form novalidate class="da-form container" name="high.form" ng-class="{'form-submitted': high.isSubmitted}">
         <div class="row">
             <div class="col-md-12">
                 <h2>Important Tasks</h2>
@@ -10,7 +10,7 @@
                 <tr>
                     <th class="col-xs-3">Title</th>
                     <th class="col-xs-5">Description</th>
-                    <th class="col-xs-3">Due</th>
+                    <th class="col-xs-3">Due <span class="text-red">*</span></th>
                     <th class="col-xs-1">Done</th>
                 </tr>
             </thead>
@@ -25,7 +25,7 @@
                     <td>
                         <div class="row">
                             <div class="col-md-8">
-                                <da-datepicker selected-date="item.due"></da-datepicker>
+                                <da-datepicker ng-model="item.due" is-required="item.isDone" name="dueDate + {{$index}}"></da-datepicker>
                             </div>
                         </div>
                     </td>
@@ -45,5 +45,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </div>
