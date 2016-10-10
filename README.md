@@ -1,2 +1,12 @@
 # ToDoList_App
-This app is my first project which I used to learn to write Javascript, HTML, and CSS using AngularJS 1 and Bootstrap. 
+Allows the user to create and organize daily tasks.  
+
+## Installation
+1. ```$ git clone https://github.com/DaleyC/ToDoList_App.git```
+2. Open solution in Visual Studio.
+3. Rebuild and run application.
+
+## Notes
+Uses Angular 1.5 and Bootstrap.
+
+
